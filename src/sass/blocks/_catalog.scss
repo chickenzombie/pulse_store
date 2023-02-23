@@ -1,0 +1,119 @@
+.catalog {
+    padding-bottom: 100px;
+
+    &__tabs {
+        margin-top: 70px;
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0;
+        padding-left: 0;
+    }
+
+    &__tab {
+        width: 220px;
+        height: 50px;
+        border: 2px solid #d0d0d0;
+        color: #6b6b6b;
+        font-size: 18px;
+        font-weight: 500;
+        text-align: center;
+        text-transform: uppercase;
+        line-height: 48px;
+        transform: skewX(-25deg);
+        margin: 0 5px;
+        cursor: pointer;
+        transition: 0.5s all;
+
+        &:hover {
+            box-shadow: 2px 2px 20px $main-color;
+            border: none;
+        }
+
+        div {
+            transform: skewX(25deg);
+        }
+
+        &_active {
+            color: #fff;
+            background-color: $main-color;
+            border: none;
+        }
+    }
+
+    &__content {
+        margin-top: 60px;
+    }
+
+    &-item {
+        width: 300px;
+        min-height: 440px;
+        border: 2px solid #e8e8e8;
+        padding: 20px 20px 26px 20px;
+
+        &__img {
+            display: block;
+            margin: 0 auto;
+        }
+
+        &__subtitle {
+            margin-top: 20px;
+            color: #0d0d0d;
+            font-size: 16px;
+            font-weight: 700;
+            text-align: center;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+
+        &__descr {
+            color: #0d0d0d;
+            font-size: 14px;
+            font-weight: 500;
+            text-align: center;
+        }
+
+        &__link {
+            display: block;
+            margin-top: 17px;
+            color: $main-color;
+            font-size: 14px;
+            font-weight: 700;
+            text-align: center;
+            text-decoration: underline;
+            text-transform: uppercase;
+
+            &:hover {
+                color: $main-color;
+            }
+        }
+
+        hr {
+            background-color: #e8e8e8;
+            margin-top: 19px;
+            margin-bottom: 21px;
+            border-bottom: none;
+        }
+
+        &__footer {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__old-price {
+            color: #555555;
+            font-size: 14px;
+            font-weight: 500;
+            text-align: left;
+            text-decoration: line-through
+        }
+
+        &__new-price {
+            color: #050505;
+            font-size: 20px;
+            font-weight: 700;
+
+        }
+    }
+}
