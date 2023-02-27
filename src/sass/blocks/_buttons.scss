@@ -10,11 +10,19 @@
     text-align: center;
     text-transform: uppercase;
 
+    &:hover {
+        background-color: #e00101;
+    }
+
     &_main {
         margin-top: 67px;
         width: 300px;
         height: 50px;
         font-size: 16px;
+
+        &:hover {
+            background-color: #e00101;
+        }
     }
 
     &_submit {
@@ -22,11 +30,19 @@
         height: 55px;
         color: #fff;
         font-size: 16px;
+
+        &:hover {
+            background-color: #e00101;
+        }
     }
 
     &_mini {
         width: 131px;
         height: 40px;
         font-size: 14px;
+
+        &:hover {
+            background-color: #e00101;
+        }
     }
 }
