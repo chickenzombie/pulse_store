@@ -64,6 +64,37 @@ $('.button_mini').each(function (i) {
         $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
         $('.overlay, #order').fadeIn();
     })
+
+    function validateForms(form) {
+        $(form).validate({
+            rules: {
+                name: {
+                    required: true,
+                    minlength: 2
+                },
+                phone: "required",
+                email: {
+                    required: true,
+                    email: true
+                }
+            },
+            messages: {
+                name: {
+                    required: "Пожалуйста, введите ваше имя",
+                    minlength: jQuery.validator.format("Введите по крайней мере {0} символа!")
+                },
+                phone: "Пожалуйста, введите ваш телефон",
+                email: {
+                    required: "Пожалуйста, введите вашу почту",
+                    email: "Неправильно введен адрес почты"
+                }
+            }
+        });
+    };
+
+    validateForms('#consultation-form');
+    validateForms('#consultation form');
+    validateForms('#order form');
 });
 
 
