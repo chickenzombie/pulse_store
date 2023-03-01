@@ -1,2 +1,2 @@
-# pulse_store
-Some description
+# RunSmart store website
+https://chickenzombie.github.io/pulse_store/
