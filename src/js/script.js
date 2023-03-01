@@ -5,10 +5,11 @@ const slider = tns({
     controls: false,
     nav: false,
     responsive: {
-        640: {
+        575: {
             edgePadding: 20,
             gutter: 20,
-            items: 1
+            items: 1,
+
         },
         700: {
             gutter: 30,
