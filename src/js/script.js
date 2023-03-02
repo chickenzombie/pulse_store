@@ -117,6 +117,15 @@ $('.button_mini').each(function (i) {
         });
         return false;
     });
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 1600) {
+            $('.pageup').fadeIn();
+        } else {
+            $('.pageup').fadeOut();
+        }
+    });
+    new WOW().init();
 });
 
 

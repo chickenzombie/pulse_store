@@ -9,12 +9,13 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     <title>Pulse store</title>
 </head>
 
 <body>
-    <section class="promo">
+    <section id="up" class="promo">
         <div class="container">
             <header class="header">
                 <a href="#" class="header__logo">
@@ -67,7 +68,7 @@
             <h2 class="title">Наши преимущества</h2>
             <div class="advantages__wrapper">
                 <div class="advantages__item">
-                    <img src="icons/advantages/cup.png" alt="" cup>
+                    <img src="icons/advantages/cup.png" alt="cup" class="advantages__icon">
                     <div class="advantages__subtitle">Делимся опытом</div>
                     <div class="advantages__descr">
                         Наши сотрудники всегда готовы поделиться своим опытом,
@@ -75,7 +76,8 @@
                     </div>
                 </div>
                 <div class="advantages__item">
-                    <img src="icons/advantages/heart.png" alt="heart">
+                    <img src="icons/advantages/heart.png" alt="heart"
+                        class="animate__animated animate__heartBeat animate__slow animate__infinite advantages__icon advantages__icon">
                     <div class="advantages__subtitle">Заботимся о здоровье</div>
                     <div class="advantages__descr">
                         Мы работаем для того,
@@ -83,7 +85,7 @@
                     </div>
                 </div>
                 <div class="advantages__item">
-                    <img src="icons/advantages/shoe.png" alt="shoe">
+                    <img src="icons/advantages/shoe.png" alt="shoe" class="advantages__icon">
                     <div class="advantages__subtitle">Учим бегать</div>
                     <div class="advantages__descr">
                         Помогаем с обучением правильной технике бега! Дружим с крупнейшей
@@ -438,7 +440,7 @@
     <section class="feedbacks">
         <div class="container">
             <h2 class="title">Отзывы клиентов</h2>
-            <div class="feedbacks__item">
+            <div class="animate__animated feedbacks__item animate__fadeInUp wow">
                 <img src="img/feedback_1.png" alt="feedback_1" class="feedbacks__img">
                 <div class="feedbacks__text">
                     <div class="feedbacks__subtitle">Ирина Иванченко</div>
@@ -454,7 +456,7 @@
                 </div>
             </div>
 
-            <div class="feedbacks__item">
+            <div class="animate__animated feedbacks__item animate__fadeInUp wow">
                 <img src="img/feedback_2.png" alt="feedback_2" class="feedbacks__img">
                 <div class="feedbacks__text">
                     <div class="feedbacks__subtitle">Иван Сёмочкин</div>
@@ -469,7 +471,7 @@
                 </div>
             </div>
 
-            <div class="feedbacks__item">
+            <div class="animate__animated feedbacks__item animate__fadeInUp wow">
                 <img src="img/feedback_3.png" alt="feedback_3" class="feedbacks__img">
                 <div class="feedbacks__text">
                     <div class="feedbacks__subtitle">Юлия Дашкина</div>
@@ -543,10 +545,15 @@
 
     </div>
 
+    <a href="#up" class="pageup">
+        <img src="icons/up.svg" alt="up">
+    </a>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 
