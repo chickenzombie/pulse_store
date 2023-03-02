@@ -191,10 +191,18 @@
 
     .carousel {
         padding: 61px 0 41px 0;
+
+        img {
+            display: none;
+        }
     }
 
     .catalog {
         padding-bottom: 40px;
+
+        &__tabs {
+            margin-top: 40px;
+        }
 
         &-item {
             width: 237px;
@@ -304,19 +312,21 @@
         min-height: 400px;
         background: url('../img/main.jpg') 31% 50%/cover no-repeat;
 
+        &__wrapper {
+            align-items: center;
+        }
+
         &__icons {
             display: none;
         }
 
         &__header {
-            display: block;
-            margin: 0 auto;
+            text-align: center;
             font-size: 32px;
         }
 
         &__subheader {
-            display: block;
-            margin: 0 auto;
+            text-align: center;
             font-size: 18px;
         }
 
@@ -358,7 +368,11 @@
         }
     }
 
-    .carousel {}
+    .carousel {
+        img {
+            display: none;
+        }
+    }
 
     .catalog {
         &__tab {
@@ -394,7 +408,7 @@
             margin: 0 0 20px 0;
             padding-bottom: 15px;
             min-height: 390px;
-            width: 65%;
+            width: 80%;
 
 
             &__wrapper {
@@ -423,12 +437,10 @@
             }
 
             &__old-price {
-                text-align: center;
                 font-size: 14px;
             }
 
             &__new-price {
-
                 font-size: 18px;
             }
 
@@ -444,4 +456,52 @@
     }
 }
 
-// Надо дописать адаптив для 320px
+@media (max-width: 379px) {
+    .catalog {
+        &__tab {
+            height: 45px;
+            line-height: 42px;
+            font-size: 9px;
+
+            &_active {
+                font-size: 9px;
+                line-height: 46px;
+            }
+        }
+
+        &-item {
+            &__new-price {
+                font-size: 16px;
+            }
+
+            &__list {
+                li {
+                    margin-bottom: 0;
+                }
+
+            }
+        }
+    }
+
+    .modal {
+        width: 285px;
+
+        &__subtitle {
+            font-size: 17px;
+            padding: 0 10px;
+        }
+
+        &__descr {
+            font-size: 12px;
+        }
+
+        &__closed {
+            right: 10px;
+            top: 12px;
+        }
+    }
+
+    div {
+        font-size: 15px;
+    }
+}
