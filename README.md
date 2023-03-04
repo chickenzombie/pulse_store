@@ -1,2 +1,3 @@
 # RunSmart store website
-https://chickenzombie.github.io/pulse_store/
+https://runsmartstore.vercel.app/
+
